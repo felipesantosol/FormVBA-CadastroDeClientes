@@ -1,7 +1,7 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} UserForm1 
    Caption         =   "Cadastro de Cliente"
-   ClientHeight    =   7860
+   ClientHeight    =   8310.001
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   15000
@@ -15,6 +15,10 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
 Dim cod As Integer
+
+Private Sub CommandButton1_Click()
+    MsgBox "Para excluir uma linha de cadastro, é necessário clicar na linha e depois ir no botão de excluir, para atualizar a linha de cadastro, é necessário dar dois clicks na tal linha.", vbOKOnly, "Instruções"
+End Sub
 
 Private Sub UserForm_Activate()
     CarregarLista
