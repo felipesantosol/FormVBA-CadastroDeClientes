@@ -1,0 +1,6 @@
+﻿Private Sub Workbook_Open()
+
+    Application.Visible = False
+    UserForm2.Show
+
+End Sub
